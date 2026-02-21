@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# Jupyter
+*.nbconvert.ipynb
+
+# OS / Editor
+.DS_Store
+.vscode/
+
+# Data and outputs (keep folders, ignore generated contents)
+data/interim/*
+data/processed/*
+output/maps/*
+output/tables/*
+
+# Keep placeholder files
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!output/maps/.gitkeep
+!output/tables/.gitkeep
