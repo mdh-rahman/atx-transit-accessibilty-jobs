@@ -53,18 +53,6 @@ If you use this repository or build on this analysis, please cite the study:
 ```text
 APA 7:
 Rahman, M. H. (2026). Who gains and who’s left behind? Evaluating transit accessibility to low-wage jobs in Austin, TX (Working paper).
-
-Chicago (Bibliography):
-Rahman, Md Hamidur. 2026. “Who Gains and Who’s Left Behind? Evaluating Transit Accessibility to Low-Wage Jobs in Austin, TX.” Working paper.
-
-BibTeX:
-@techreport{rahman2026transit,
-   author      = {Rahman, Md Hamidur},
-   title       = {Who Gains and Who's Left Behind? Evaluating Transit Accessibility to Low-Wage Jobs in Austin, TX},
-   year        = {2026},
-   type        = {Working paper},
-   institution = {The University of Texas at Austin}
-}
 ```
 
 Update author formatting, title capitalization, institution, and URL/DOI after final publication.
