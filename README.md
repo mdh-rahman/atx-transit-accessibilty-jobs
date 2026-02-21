@@ -1,4 +1,4 @@
-# Transit Accessibility Analysis Repository
+# Evaluating transit accessibility to low-wage jobs in Austin, TX
 
 This repository supports a transit equity study of Austin, Texas, comparing transit accessibility outcomes between 2017 and 2025 with a focus on access to low-wage jobs.
 
