@@ -51,8 +51,5 @@ These results highlight the need for equity-focused transit planning that better
 If you use this repository or build on this analysis, please cite the study:
 
 ```text
-APA 7:
 Rahman, M. H. (2026). Who gains and who’s left behind? Evaluating transit accessibility to low-wage jobs in Austin, TX (Working paper).
 ```
-
-Update author formatting, title capitalization, institution, and URL/DOI after final publication.
