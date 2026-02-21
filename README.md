@@ -33,6 +33,8 @@ Findings indicate modest overall improvement in job accessibility and a slight r
    - `pip install -r requirements.txt`
 3. Run reproducible pipeline scripts from `scripts/`.
 4. Use notebooks in `notebooks/` for exploratory analysis and figure generation.
+5. Generate map images from processed outputs:
+   - `python scripts/run_maps.py --comparison-csv data/processed/accessibility_comparison.csv --maps-dir output/maps`
 
 ## Recommended Migration Order
 
