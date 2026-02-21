@@ -51,8 +51,13 @@ These results highlight the need for equity-focused transit planning that better
 If you use this repository or build on this analysis, please cite the study:
 
 ```text
+APA 7:
 Rahman, H. (2026). Transit accessibility, equity, and displacement risk in Austin, Texas:
-Changes in access to low-wage jobs between 2017 and 2025. Working paper.
+Changes in access to low-wage jobs between 2017 and 2025 (Working paper).
+
+Chicago (Bibliography):
+Rahman, Hamidur. 2026. “Transit Accessibility, Equity, and Displacement Risk in Austin, Texas:
+Changes in Access to Low-Wage Jobs Between 2017 and 2025.” Working paper.
 ```
 
-You can replace this with your preferred citation style and final publication details once available.
+Update author formatting, title capitalization, institution, and URL/DOI after final publication.
