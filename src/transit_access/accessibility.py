@@ -15,6 +15,27 @@ def summarize_jobs_within_threshold(
     return summary
 
 
+def summarize_jobs_by_income_within_threshold(
+    travel_times: pd.DataFrame,
+    jobs_by_tract: pd.DataFrame,
+    threshold_minutes: int = 45,
+    from_col: str = "from_id",
+    to_col: str = "to_id",
+) -> pd.DataFrame:
+    """Summarize accessible jobs by income level (CE01=low, CE02=mid, CE03=high, C000=total).
+    
+    Returns DataFrame with columns: from_id, CE01, CE02, CE03, C000
+    """
+    filtered = travel_times[travel_times["travel_time"] < threshold_minutes]
+    merged = filtered.merge(jobs_by_tract, how="left", left_on=to_col, right_on="tract_id")
+    
+    job_cols = ["CE01", "CE02", "CE03", "C000"]
+    available_cols = [col for col in job_cols if col in merged.columns]
+    
+    summary = merged.groupby(from_col, as_index=False)[available_cols].sum()
+    return summary
+
+
 def compare_accessibility(before_df: pd.DataFrame, new_df: pd.DataFrame, id_col: str = "from_id") -> pd.DataFrame:
     out = before_df.merge(new_df, how="outer", on=id_col, suffixes=("_before", "_new"))
     out["diff"] = out["C000_new"] - out["C000_before"]

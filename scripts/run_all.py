@@ -11,6 +11,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--gtfs-2025", required=True, help="Path to GTFS zip for 2025")
     parser.add_argument("--wac-2017", required=True, help="Path to 2017 WAC CSV")
     parser.add_argument("--wac-2022", required=True, help="Path to 2022 WAC CSV")
+    parser.add_argument("--rac-2017", default=None, help="Path to 2017 RAC CSV (for normalized maps)")
+    parser.add_argument("--rac-2022", default=None, help="Path to 2022 RAC CSV (for normalized maps)")
     parser.add_argument("--out-dir", default="data/processed", help="Output directory for CSV outputs")
     parser.add_argument("--maps-dir", default="output/maps", help="Output directory for map PNG files")
     parser.add_argument("--tract-year", type=int, default=2023, help="Census tract year (default: 2023)")
@@ -50,6 +52,11 @@ if __name__ == "__main__":
         str(args.threshold),
     ]
 
+    if args.rac_2017:
+        run_compare_cmd.extend(["--rac-2017", args.rac_2017])
+    if args.rac_2022:
+        run_compare_cmd.extend(["--rac-2022", args.rac_2022])
+
     comparison_csv = str(Path(args.out_dir) / "accessibility_comparison.csv")
     run_maps_cmd = [
         python_exe,
@@ -62,6 +69,8 @@ if __name__ == "__main__":
         str(args.tract_year),
         "--countyfp",
         args.countyfp,
+        "--threshold",
+        str(args.threshold),
     ]
 
     run_cmd(run_compare_cmd, cwd=project_root)
