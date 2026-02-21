@@ -58,6 +58,15 @@ Changes in access to low-wage jobs between 2017 and 2025 (Working paper).
 Chicago (Bibliography):
 Rahman, Hamidur. 2026. “Transit Accessibility, Equity, and Displacement Risk in Austin, Texas:
 Changes in Access to Low-Wage Jobs Between 2017 and 2025.” Working paper.
+
+BibTeX:
+@techreport{rahman2026transit,
+   author      = {Rahman, Hamidur},
+   title       = {Transit Accessibility, Equity, and Displacement Risk in Austin, Texas: Changes in Access to Low-Wage Jobs Between 2017 and 2025},
+   year        = {2026},
+   type        = {Working paper},
+   institution = {The University of Texas at Austin}
+}
 ```
 
 Update author formatting, title capitalization, institution, and URL/DOI after final publication.
