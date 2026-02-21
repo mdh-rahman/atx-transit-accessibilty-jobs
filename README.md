@@ -35,6 +35,8 @@ Findings indicate modest overall improvement in job accessibility and a slight r
 4. Use notebooks in `notebooks/` for exploratory analysis and figure generation.
 5. Generate map images from processed outputs:
    - `python scripts/run_maps.py --comparison-csv data/processed/accessibility_comparison.csv --maps-dir output/maps`
+6. Run end-to-end in one command:
+   - `python scripts/run_all.py --osm ../openstreetmap_fr_central-latest.osm.pbf --gtfs-2017 ../DataPortal/gtfs-2017-06-01.zip --gtfs-2025 ../DataPortal/gtfs_new.zip --wac-2017 ../LODES/tx_wac_S000_JT00_2017.csv --wac-2022 ../LODES/tx_wac_S000_JT00_2022.csv --out-dir data/processed --maps-dir output/maps`
 
 ## Recommended Migration Order
 
