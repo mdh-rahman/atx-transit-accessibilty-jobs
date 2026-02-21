@@ -45,3 +45,14 @@ Findings indicate modest overall improvement in job accessibility and a slight r
 ## Policy Relevance
 
 These results highlight the need for equity-focused transit planning that better aligns improvements with community needs, particularly for low-wage workers and neighborhoods facing displacement pressure. Future extensions include qualitative context, multi-time-window accessibility analysis, and dynamic socio-spatial indicators.
+
+## Citation
+
+If you use this repository or build on this analysis, please cite the study:
+
+```text
+Rahman, H. (2026). Transit accessibility, equity, and displacement risk in Austin, Texas:
+Changes in access to low-wage jobs between 2017 and 2025. Working paper.
+```
+
+You can replace this with your preferred citation style and final publication details once available.
